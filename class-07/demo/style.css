@@ -1,0 +1,36 @@
+/* * {
+    border: solid black 1px;
+} */
+section {
+    background-color: bisque;
+    border: solid black 1px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#pic1 {
+    display: block;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: auto;
+    /* width: 50%; */
+}
+
+.nav {
+    display: inline;
+    border: solid black 1px;
+}
+
+nav > ul > li {
+    margin: 70px;
+    padding: 10px;
+    color: blue;
+    display: inline;
+}
+
+#about {
+    color: orange;
+    background-color: teal;
+}
