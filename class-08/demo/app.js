@@ -28,7 +28,8 @@ function isTraining(){
 
 function forceGuessingGame() {
  
-    var correctAnswer = 32;
+    var correctAnswer = randomSalesGenerator(1,100);
+    console.log(correctAnswer)
 
     for(var i = 0; i < 8; i = i + 1){
         var numberGuess = prompt('Please Guess a Number between 1 and 100');
@@ -56,6 +57,11 @@ function forceChoke() {
         document.write('<h3>' + 'The Dark Side of the Force is strong in ' + userName + '!' + '<h3>');
     }
 }
+
+
+function randomSalesGenerator(min, max){
+    return Math.ceil(Math.random() * ((max - min + 1)+ min));
+  }
 
 isTraining();
 forceGuessingGame();
